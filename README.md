@@ -17,19 +17,22 @@ The following app was completed following Scotch.io's tutorial:
  keep everything there and then when I am finished, possibly organize everything by component.
  - To get 'Hello, World!' up on my screen, this is what I have right now:
 
- ```html
- <!doctype html>
+```html
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>React App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>React App</title>
+</head>
+<body>
+<div id="root"></div>
+</body>
 </html>
 ```
+- my index.html file has very little besides a div with id="root".  As I said above, this is
+where my app mounts
+
 ```javascript
 // src/index.js
 import React from 'react';
@@ -40,7 +43,12 @@ ReactDOM.render(
   <App />,
   document.getElementById('root')
 );
-
+```
+- my index.js file is importing the necessary libraries, react and reactDOM, and then is
+importing my app.
+- it also has the responsibility of telling ReactDOM what to render (my App component) 
+and where to mount it (standard JS grabbing the div with id="root")
+```javascript
 // src/App.js
 import React, { Component } from 'react';
 
@@ -56,4 +64,15 @@ class App extends Component {
 
 export default App;
 ```
+- this is my App.  Here are the main bits:
+  - import necessary libraries (I'm writing JSX but I'm NOT rendering it to the DOM, so
+  I guess I don't need ReactDOM)
+  - my App is a component that wants to inherit all the good stuff about being a React 
+  'Component', hence the 'class App extends Component' and the import { Component } part
+  at the top
+  - Lastly, I am exporting it
+    - if I comment out that line, the error I receive is in the Terminal where it tells me 
+    that 'App' is defined but never used.
+
+
 
