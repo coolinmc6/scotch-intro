@@ -145,8 +145,8 @@ the tutorial's syntax for building the Counter class, I have to separate my meth
 When you look at it, you can see that it is essentially one big object.  I don't think I like
 syntax as much as I've learned in other places...re-writing this component would be a good exercise.
 - I've been importing { Component } as well in my components like I've learned elsewhere but
-I get a warning explaing how { Component } is defined but not used.  I guess the React.createClass
-object is not equal to what { Component } brings to the table.
+I get a warning explaining how { Component } is defined but not used.  I guess the
+React.createClass object is not equal to what { Component } brings to the table.
 
 ## Unidirectional Data Flow
 
@@ -181,7 +181,7 @@ constructor(props) {
   - a good exercise would be to convert all of these 'old-fashioned' components into ES6 classes
   - a good source on this discussion [here](http://stackoverflow.com/questions/30668326/what-is-the-difference-between-using-constructor-vs-getinitialstate-in-react-r).
 - The getInitialState() is a method that returns an object with two keys: 'initialItems' and
-'items'.  Each of this is an array. 'initialItems' contains a list of items (strings) while
+'items'.  Each of these is an array. 'initialItems' contains a list of items (strings) while
 'items' is a blank array.
 - Defining the function, I believe, is NOT enough to set the initial state.  So...right below it
 is componentWillMount(), a function that sets the 'items' key of state to what is in the
