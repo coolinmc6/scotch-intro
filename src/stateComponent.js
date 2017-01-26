@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
+import React from 'react';
 
 const StateComponent = React.createClass({
+// class StateComponent extends Component{
 	getInitialState: function(){
         return {
             count: 5
@@ -12,5 +14,5 @@ const StateComponent = React.createClass({
         )
     }
 })
-
+// }
 export default StateComponent;
