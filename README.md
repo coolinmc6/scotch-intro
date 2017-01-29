@@ -15,8 +15,8 @@ files.  I need to build 5 components (not including the App):~~
   - ~~'Hello World' component that can receive a 'name' and display it on the screen~~
   - ~~'State' component that has an initial state and displays that on the screen~~
   - ~~'Counter' component with initial state that can be incremented~~
-  - ~~'FilteredList' and 'List' components that display a list of items that change dynamically~~
-  as the user enters items
+  - ~~'FilteredList' and 'List' components that display a list of items that change dynamically
+  as the user enters items~~
   - finished version located here: [scotch-intro-CM](https://github.com/coolinmc6/scotch-intro-CM)
 
 ## Notes
