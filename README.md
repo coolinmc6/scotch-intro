@@ -10,7 +10,7 @@ etc)
 - break up my notes by sections
 - do another quick read-through of the tutorial and place the questions in the appropriate
 sections
-~~- redo the app using the ES6 class syntax that you're used to WITHOUT looking at these
+- ~~redo the app using the ES6 class syntax that you're used to WITHOUT looking at these
 files.  I need to build 5 components (not including the App):~~
   - 'Hello World' component that can receive a 'name' and display it on the screen
   - 'State' component that has an initial state and displays that on the screen
